@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <title>윤호의 워게임 풀이 실적물</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      text-align: center;
+      text height: 200%;
+    }
+    a {
+      color:blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Level 1 ---> Level 2</h1>
+  <p><img src="반딧2.1.png" width="600"></p>
+  <p><font size="5">문제를 해석해 보니 다음 단계를 위한 패스워드가 <strong>-라는 이름의 파일</strong>에 있다고 합니다. 이것 또한 파일이니까 그냥 cat 명령어를 쓰면 되지 않을까요?</font></p>
+  <p><font size="5">먼저 <strong>ls</strong> 명령어를 이용해서 존재하는 파일들을 확인해 보니</font></p>
+  <p><img src="반딧 2.2.png" width="600"></p>
+  <p><font size="5">여기에 -라는 이름의 파일이 있군요.<br>이 파일을 cat 해보면</font></p>
+  <p><img src="반딧2.3.png" width="600"></p> <p><font size="5">짜잔~~~<br><strong>아무것도 나오지 않고(?) 오류가 납니다</strong></p>
+  <p>일단 오류를 풀어주기 위해 <strong>Ctrl + C</strong>를 해줍니다.</p>
+  뭐가 문제인걸까요? 아래에 <strong>Helpful Reading Material</strong>이라는게 있는데요.<br>이름처럼 도움이 되니깐 저기에 놨겠죠? 한 번 들어가 봅시다.</font>
+  <p><img src="반딧2.4.png" width="600"></p>
+  <p><font size ="5">검색해보니 두번째에 <strong>How to open a "-" dashed filename using terminal?</strong>이라는 제목의 글이 있네요.<br>
+  <p><img src="반딧2.5.png" width="600"></p><p>들어가 보니 <strong>cat < -</strong> 혹은 <strong>./ -</strong>를 하면 비밀번호를 찾을 수 있다고 하네요.</p>
+  <p>바로 고고씽 해볼까요?</p>
+  <p><img src="반딧2.6.png" width="600"></p><p><strong>cat < -</strong>는 잘 작동이 되는데 <strong>./ -</strong> 는 안되나 보네요.</p>
+  <p>일단 나온 패스워드로 bandit2에 로그인 해보면</p><p><img src="반딧2 끝.png" width="600"></p><p>로그인에 성공하게 됩니다</p>
+  <p><strong>인터넷에 수많은 정보를 모두 신뢰 할 수는 없다</strong> 라는 교훈을 얻고 다음 레벨로 넘어가 봅시다!</p>
+  <li><font size="50"><a href="3.html"><font color="blue">Level 2 ---> Level 3(클릭)</font></a></li></font>
